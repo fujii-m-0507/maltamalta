@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- レスポンシブ 文字の大きさは画面に合わせる-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>質問フォーム</title>
+    <meta name="descriprion" content="マルタへの旅行、留学に関してご質問がある方はお気軽にどうぞ。旅行、留学のプランニング等はできませんのでご容赦ください。">
+    <!-- link rescss -->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/news.css">
+    <!-- ファビコン設定 -->
+    <link rel="icon" type="image/png" href="images/favicon malta.jpg">
+</head>
+
+<body>
+    <div id="contact" class="big-bg">
+        <header class="page-header wrapper">
+            <!-- /*wrapper全体を囲む設定にする 最大幅を設定できる -->
+            <!-- <h1>
+                <a href="index.html"><img class="logo" src="images/logo.svg" alt="WCBカフェ"></a>
+                <br>自然派志向のためのオーガニックカフェ
+            </h1> -->
+            <nav>
+                <ul class="main-nav">
+                    <li><a href="aboutmalta.html">Top</a></li>
+                    <li><a href="valetta.html">バレッタ</a></li>
+                    <li><a href="sliema.html">スリーマ</a></li>
+                    <li><a href="spot.html">その他のエリア</a></li>
+                    <li><a href="lifestyle.html">留学生活</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="wrapper">
+            <h2 class="page-title">質問フォーム</h2>
+            <form method="POST" action="nameCheck.php">
+                <div>
+                    <label for="name">お名前</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div>
+                    <label for="email">メールアドレス</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div>
+                    <label for="checkbox">質問内容</label>
+                    <input type="checkbox" id="checkbox" name="checkbox[]" value="旅行">旅行
+                    <input type="checkbox" id="checkbox" name="checkbox[]" value="留学">留学
+                    <input type="checkbox" id="checkbox" name="checkbox[]" value="その他">その他
+                </div>
+                <div>
+                    <!-- <label for="message">質問内容</label> -->
+                    <textarea id="message" name="your-message" cols="30" rows="5" maxlength="150" placeholder="コメントをどうぞ"></textarea>
+                </div>
+                <input type="submit" class="button" value="送信">
+            </form>
+        </div><!--/.wrapper-->
+    </div><!--/#contact-->
+    <footer>
+        <div class="wrapper">
+            <p><small>&copy; 2023 malta travel</small></p>
+        </div>
+    </footer>
+</body>
+
+</html>
